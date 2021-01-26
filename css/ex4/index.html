@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+        } 
+
+        #header {
+            background-color: orange;
+            text-align: center;
+            height: 50px;
+            padding: 10px 20px;
+            margin-bottom: 5px;
+        }
+
+        #aside {
+            float: left;
+            width: 28%;
+            height: 500px;
+            background-color: green;
+            padding: 10px 20px;
+            margin-bottom: 5px;
+        }
+
+        #main {
+            float: right;
+            width: 70%;
+            height: 500px;
+            text-align: right;
+            background-color: purple;
+            padding: 10px 20px;
+            margin-bottom: 5px;
+        }
+
+        #footer{
+            background-color: blue;
+            text-align: center;
+            height: 50px;
+            padding: 10px 20px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="header">
+            Header
+        </header>
+        <aside id="aside">
+            Aside
+        </aside>
+        <main id="main">
+            Main
+        </main>
+        <div class="clear"></div>
+        <footer id="footer">
+            Footer
+        </footer>
+    </div>
+</body>
+</html>
