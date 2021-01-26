@@ -43,15 +43,20 @@
 
       #header {
         float: inline-start;
+        height: fit-content;
         background-color: orange;
         text-align: center;
         height: 50px;
+        padding: 5px 10px;
+        margin-bottom: 0px;
       }
 
       #aside {
         float: left;
         width: 28%;
         background-color: green;
+        padding: 5px 5px;
+        margin-bottom: 0px;
       }
 
       #main {
@@ -67,13 +72,74 @@
         text-align: center;
         height: 50px;
       }
+
+      #navBar{
+          border: 1px #555 solid;
+          border-radius: 10px;
+      }
+
+      #btn{
+        color: black;
+        text-decoration: none;
+      }
+
+      a{
+        color: black;
+        text-decoration: none;
+        padding: 5px 10px;
+        margin-bottom: 0;
+      }
+
+      .navBar a:hover{
+        color: blue;
+      }
+
+      .navBar a:active{
+        color:lightskyblue;
+        background-color: rgb(255, 145, 0);
+      }
+
+      #aside ul li{
+        display: inline;
+      }
+
+      #aside ul li a:hover{
+        color: blue;
+      }
+
+      #aside ul li a:active{
+        color: lightskyblue;
+        background-color: rgb(0, 128, 49);
+      }
+
+      button.round_ghost{
+        border-width: 1px;
+        color: white;
+        border-radius: 5px;
+        background-color: transparent;
+      }
+
+      .round_submit {
+        background-color: gray;
+        border-color: gray;
+      }
+
+      aside button:hover {
+        color: #ddd;
+      }
+
     </style>
     <title>Portfoli</title>
   </head>
   <body>
     <div class="container">
         <header id="header">
-            Header
+            <section class="navBar">
+                <a href="#">home</a>
+                <a href="#">projects</a>
+                <a href="#">blog</a>
+                <a href="#">another link</a>
+            </section>
         </header>
       <main id="main">
         <section class="card">
@@ -120,7 +186,7 @@
             <a href="https://github.com/AliMasarweh" target="_blank">github</a>
           </li>
         </ul>
-        <button>A button</button>
+        <button class="round_ghost round_submit">A button</button>
       </aside>
       <div class="clear"></div>
         <footer id="footer">
