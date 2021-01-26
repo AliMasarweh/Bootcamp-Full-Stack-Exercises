@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
       .card {
-        width: 300px;
+        width: 600px;
         background-color: #e3b239;
       }
       .card-image {
-        width: 300px;
+        width: 600px;
       }
       .card-header {
         font-weight: bold;
@@ -21,56 +21,111 @@
       .card-link {
         color: brown;
       }
+
+      * {
+        box-sizing: border-box;
+
+        padding: 10px 20px;
+        margin-bottom: 5px;
+      }
+
+      .clear {
+        clear: both;
+        padding: 0 0;
+        margin-bottom: 0;
+      }
+
+      .container {
+        float: none;
+        max-width: 960px;
+        margin: 20px auto;
+      }
+
+      #header {
+        float: inline-start;
+        background-color: orange;
+        text-align: center;
+        height: 50px;
+      }
+
+      #aside {
+        float: left;
+        width: 28%;
+        background-color: green;
+      }
+
+      #main {
+        float: right;
+        width: 70%;
+        text-align: right;
+        background-color: purple;
+      }
+
+      #footer {
+        float: inline-end;
+        background-color: blue;
+        text-align: center;
+        height: 50px;
+      }
     </style>
-    <title>exercise 4</title>
+    <title>Portfoli</title>
   </head>
   <body>
-    <header></header>
-    <body>
-      <section class="card">
-        <img
-          src="../img/My Pic.png"
-          style="height: 350px"
-          alt="profile picture"
-          class="card-image"
-        />
-        <br />
-        <h1 style="display: inline" class="card-heade">Ali Masarwe</h1>
-        <h2 class="card-sub-header">Software Engineer</h2>
-
-        <p style="font-size: large">
-          Excellent Computer Science Graduate with 88 GPA from Ariel
-          University<br />
-          highly motivated with a lot of passion for coding, solving problems &
-          new skills and technologies. <br />
-          programming languages in <strong> c\c++, python, java, js </strong>
+    <div class="container">
+        <header id="header">
+            Header
+        </header>
+      <main id="main">
+        <section class="card">
+          <img
+            src="../img/My Pic.png"
+            style="height: 350px"
+            alt="profile picture"
+            class="card-image"
+          />
           <br />
-          elegent projects and clean code with
-          <strong> SOLID </strong>princibles
-        </p>
-      </section>
+          <h1 style="display: inline" class="card-heade">Ali Masarwe</h1>
+          <h2 class="card-sub-header">Software Engineer</h2>
 
-      
-      <h2>Contact me</h2>
-      <ul>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/ali-masarwe-7a7886143/"
-            target="_blank"
-            >LinkedIn</a
-          >
-        </li>
-        <li>
-          <a href="https://www.facebook.com/ali.masarweh" target="_blank"
-            >Facbook</a
-          >
-        </li>
-        <!-- I don't have more social media accounts -->
-        <li>
-          <a href="https://github.com/AliMasarweh" target="_blank">github</a>
-        </li>
-      </ul>
-      <button>A button</button>
-    </body>
+          <p style="font-size: large">
+            Excellent Computer Science Graduate with 88 GPA from Ariel
+            University<br />
+            highly motivated with a lot of passion for coding, solving problems
+            & new skills and technologies. <br />
+            programming languages in <strong> c\c++, python, java, js </strong>
+            <br />
+            elegent projects and clean code with
+            <strong> SOLID </strong>princibles
+          </p>
+        </section>
+      </main>
+
+      <aside id="aside">
+        <h2>Contact me</h2>
+        <ul>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/ali-masarwe-7a7886143/"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a href="https://www.facebook.com/ali.masarweh" target="_blank"
+              >Facbook</a
+            >
+          </li>
+          <!-- I don't have more social media accounts -->
+          <li>
+            <a href="https://github.com/AliMasarweh" target="_blank">github</a>
+          </li>
+        </ul>
+        <button>A button</button>
+      </aside>
+      <div class="clear"></div>
+        <footer id="footer">
+            Footer
+        </footer>
+    </div>
   </body>
 </html>
