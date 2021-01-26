@@ -7,23 +7,28 @@
     <style>
         * {
             box-sizing: border-box;
+            
+            padding: 10px 20px;
+            margin-bottom: 5px;
         }
 
         .clear {
             clear: both;
+            padding: 0 0;
+            margin-bottom: 0;
         }
 
         .container {
+            float: none;
             max-width: 960px;
             margin: 20px auto;
         } 
 
         #header {
+            float: inline-start;
             background-color: orange;
             text-align: center;
             height: 50px;
-            padding: 10px 20px;
-            margin-bottom: 5px;
         }
 
         #aside {
@@ -31,8 +36,6 @@
             width: 28%;
             height: 500px;
             background-color: green;
-            padding: 10px 20px;
-            margin-bottom: 5px;
         }
 
         #main {
@@ -41,16 +44,13 @@
             height: 500px;
             text-align: right;
             background-color: purple;
-            padding: 10px 20px;
-            margin-bottom: 5px;
         }
 
         #footer{
+            float: inline-end;
             background-color: blue;
             text-align: center;
             height: 50px;
-            padding: 10px 20px;
-            margin-bottom: 5px;
         }
     </style>
 </head>
