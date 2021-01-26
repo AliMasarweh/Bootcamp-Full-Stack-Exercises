@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        float: none;
+        max-width: 960px;
+        margin: 20px auto;
+      }
+
+      button.flat {
+        border: 0px;
+        color: white;
+        border-radius: 0px;
+      }
+
+      button.flat_ghost {
+        border-width: 1px;
+        background-color: transparent;
+        border-radius: 0px;
+        color: white;
+      }
+
+      button.round {
+        border: 0px;
+        color: white;
+        border-radius: 5px;
+      }
+
+      button.round_ghost{
+        border-width: 1px;
+        color: white;
+        border-radius: 5px;
+        background-color: transparent;
+      }
+
+      .rect_register {
+        background-color: greenyellow;
+        border-color: greenyellow;
+      }
+      .rect_clear {
+        background-color: red;
+        border-color: red;
+      }
+      .rect_submit {
+        background-color: steelblue;
+        border-color: steelblue;
+      }
+
+      .round_register {
+        background-color: orange;
+        border-color: orange;
+      }
+
+      .round_clear {
+        background-color: yellow;
+        border-color: yellow;
+      }
+
+      .round_submit {
+        background-color: gray;
+        border-color: gray;
+      }
+
+    </style>
+  </head>
+  <body style="background-color: rgb(0, 76, 138)">
+    <section class="container">
+      <button value="Register" class="flat rect_register">Register</button>
+      <button value="Clear" class="flat rect_clear">Clear</button>
+      <button value="Submit" class="flat rect_submit">Submit</button>
+    </section>
+    <section class="container">
+      <button value="Register" class="round round_register">Register</button>
+      <button value="Clear" class="round round_clear">Clear</button>
+      <button value="Submit" class="round round_submit">Submit</button>
+    </section>
+    <section class="container">
+      <button value="Register" class="flat_ghost rect_register">
+        Register
+      </button>
+      <button value="Clear" class="flat_ghost rect_clear">Clear</button>
+      <button value="Submit" class="flat_ghost rect_submit">Submit</button>
+    </section>
+    <section class="container">
+      <button value="Register" class="round_ghost round_register">
+        Register
+      </button>
+      <button value="Clear" class="round_ghost round_clear">Clear</button>
+      <button value="Submit" class="round_ghost round_submit">Submit</button>
+    </section>
+  </body>
+</html>
