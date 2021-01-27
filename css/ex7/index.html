@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #outer {
+        width: 750px;
+        height: 750px;
+        border: 2px black solid;
+        position: relative;
+        margin: 50px;
+      }
+      #div1 {
+        width: 30%;
+        height: 30%;
+        border: 2px black solid;
+        position: absolute;
+        z-index: 1;
+        background-color: white;
+      }
+      #div2 {
+        width: 25%;
+        height: 40%;
+        border: 2px black solid;
+        position: absolute;
+        top: 15%;
+        left: 15%;
+        z-index: 2;
+        background-color: white;
+      }
+      #div3 {
+        width: 100%;
+        height: 150px;
+        border: 2px black solid;
+        top: 40%;
+        left: 0%;
+        position: absolute;
+        z-index: 3;
+        background-color: white;
+      }
+      #div4 {
+        width: 20%;
+        height: 100%;
+        border: 2px black solid;
+        position: absolute;
+        z-index: 4;
+        top: 0%;
+        left: 60%;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outer">
+      <div id="div1">div one</div>
+      <div id="div2">div two</div>
+      <div id="div3">div three</div>
+      <div id="div4">div four</div>
+    </div>
+  </body>
+</html>
