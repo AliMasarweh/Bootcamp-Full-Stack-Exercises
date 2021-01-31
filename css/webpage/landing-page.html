@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    /* fix base and smallest font size */
+    h1 {
+      font-size: 20px;
+    }
+    /* fluid font from 320px onwards */
+    @media (min-width: 320px) {
+      h1 {
+        font-size: calc(20px + 2vw);
+      }
+    }
+    /* fix font size for large screens. Calculate this point */
+    @media (min-width: 1750px) {
+      h1 {
+        font-size: 55px;
+      }
+    }
+  </style>
+  <body>
+    <section class="fuild-contaier">
+      <h1>Fuild Title</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fugit
+        beatae cum neque nostrum! Veniam eos vero maiores doloribus sit a
+        repudiandae assumenda maxime in error saepe, aliquam earum cum dicta
+        nostrum debitis, eius illum pariatur, quod repellendus aliquid
+        architecto?
+      </p>
+    </section>
+  </body>
+</html>

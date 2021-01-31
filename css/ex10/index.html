@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .responsive-layout {
+        color: white;
+      }
+
+      .responsive-block {
+        background-color: #333;
+      }
+
+      @media (min-width: 1401px) {
+        .responsive-layout {
+          display: block;
+        }
+
+        .responsive-block {
+          display: inline-block;
+          padding: 0px 5px;
+          width: 24%;
+        }
+      }
+
+      @media (min-width: 851px) and (max-width: 1400px) {
+        .responsive-layout {
+            display: block;
+        }
+
+        .responsive-block {
+          display: inline-block;
+          padding: 10px 10px;
+          margin: 10px 0px;
+          width: 47%;
+        }
+      }
+
+      @media (min-width: 500px) and (max-width: 850px) {
+        .responsive-layout {
+            display: block;
+        }
+
+        .responsive-block {
+          display: inline-block;
+          padding: 10px 10px;
+          margin: 10px 0px;
+          width: 97%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="responsive-layout">
+      <section class="responsive-block">
+        <h1>Header</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+          minima sed voluptatem ipsa numquam, sequi atque earum quisquam
+          consequatur, iure hic. Perspiciatis, labore laudantium corporis
+          repellendus dolores molestias voluptas distinctio?
+        </p>
+      </section>
+      <section class="responsive-block">
+        <h1>Header</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+          minima sed voluptatem ipsa numquam, sequi atque earum quisquam
+          consequatur, iure hic. Perspiciatis, labore laudantium corporis
+          repellendus dolores molestias voluptas distinctio?
+        </p>
+      </section>
+      <section class="responsive-block">
+        <h1>Header</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+          minima sed voluptatem ipsa numquam, sequi atque earum quisquam
+          consequatur, iure hic. Perspiciatis, labore laudantium corporis
+          repellendus dolores molestias voluptas distinctio?
+        </p>
+      </section>
+      <section class="responsive-block">
+        <h1>Header</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+          minima sed voluptatem ipsa numquam, sequi atque earum quisquam
+          consequatur, iure hic. Perspiciatis, labore laudantium corporis
+          repellendus dolores molestias voluptas distinctio?
+        </p>
+      </section>
+    </section>
+  </body>
+</html>
