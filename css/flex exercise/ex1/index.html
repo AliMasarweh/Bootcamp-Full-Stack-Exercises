@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+      * {
+          padding: 0;
+          margin: 0;
+      }
+    .flex-container {
+      background-color: yellow;
+      height: 30vh;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .flex-item {
+        display: inline-block;
+        height: 10vh;
+        width: 10%;
+    }
+
+    .item-1 {
+      background-color: green;
+    }
+    .item-2 {
+      background-color: blue;
+    }
+
+    .item-3 {
+        background-color: red;
+    }
+  </style>
+  <body>
+    <section class="flex-container">
+      <section class="flex-item item-1"><h1>1</h1></section>
+      <section class="flex-item item-2"><h1>2</h1></section>
+      <section class="flex-item item-3"><h1>3</h1></section>
+    </section>
+  </body>
+</html>

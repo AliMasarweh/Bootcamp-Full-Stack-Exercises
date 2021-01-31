@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .flex-container {
+      background-color: #d7d7d7;
+      color: #77a;
+    }
+
+    @media (min-width: 801px) {
+      .flex-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .flex-item {
+        display: inline-block;
+        padding: 15px 10px;
+      }
+
+      .logo {
+        align-content: flex-start;
+      }
+
+      .navbar {
+          align-content: flex-end;
+      }
+    }
+
+    @media (max-width: 850px) {
+      .flex-container {
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+        font-size: 2rem;
+      }
+
+      .flex-item {
+        text-align: center;
+        display: block;
+        padding: 30px 10px;
+      }
+
+      .logo {
+        text-align: center;
+      }
+    }
+  </style>
+  <body>
+    <section class="flex-container">
+      <section class="flex-item logo"><h1>APPLESEEDS</h1></section>
+      <section class="navbar">
+        <section class="flex-item navbar-item"><h1>HOME</h1></section>
+        <section class="flex-item navbar-item"><h1>ABOUT</h1></section>
+        <section class="flex-item navbar-item"><h1>PROTFOLIO</h1></section>
+        <section class="flex-item navbar-item"><h1>CONTACT</h1></section>
+      </section>
+    </section>
+  </body>
+</html>
