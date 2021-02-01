@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    a {
+        text-decoration: none;
+        color: purple;
+        font-weight: bold;
+    }
+
+    .explainig-href:hover::after{
+        content: 'this is a badass tooltip';
+        position: absolute;
+        top: -12px;
+        left: -25px;
+        font-size: 0.5rem;
+        width: 76px;
+        color: #333;
+        background-color: rgb(216, 216, 11);
+        padding: 2px 10px;
+        border-radius: 15px;
+    }
+
+    .explainig-href:hover::before{
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 12px;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+
+        border-top: 5px solid rgb(216, 216, 11);
+    }
+    .relative-span {
+        position: relative;
+    }
+</style>
+<body>
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, cum quae. Distinctio aperiam earum quos quisquam soluta vitae aut dignissimos quidem adipisci nisi cumque totam animi corrupti, neque sed debitis!
+            Quae quos itaque dolore earum nam rem officiis ad officia odio suscipit ut quo, quasi, commodi dolor ab cupiditate qui maiores quis nihil quisquam animi repellat nesciunt labore magnam. Maxime.
+            Explicabo eligendi labore impedit enim suscipit. Excepturi expedita necessitatibus cum quaerat, nisi saepe reiciendis nesciunt hic esse magni natus sequi libero facere dolorum corporis, quia rerum quam, mollitia doloremque! Odit.
+            Odio fugit architecto mollitia at illum nihil dolore sunt atque aspernatur optio deleniti nulla laboriosam fuga distinctio ea tempora assumenda nesciunt est aliquam, nemo, nostrum molestiae excepturi omnis. Id, cum!
+            Autem quibusdam voluptatibus <span class="relative-span"><a href="" class="explainig-href"> consectetur </a></span> iure molestiae inventore quis explicabo corporis, repellat dicta similique fuga ratione, cupiditate laborum ut perferendis. Iusto minus perspiciatis nostrum aliquid ullam itaque odit pariatur, reiciendis corporis.
+            Cum incidunt hic velit eligendi officia excepturi earum odit ullam nobis magni praesentium architecto aliquam, saepe natus molestiae? Exercitationem expedita unde illo voluptates adipisci rerum fugit ipsam consectetur, possimus autem.
+            Rem fugit consectetur inventore omnis odit corporis nam saepe nobis nihil, voluptatum error autem eligendi consequatur similique ea. Voluptas sint fuga eum quod illum pariatur doloremque aut totam optio nulla.
+            Veritatis fugit dolore ipsum aut omnis <span class="relative-span"><a href="" class="explainig-href"> dolor</a></span>, magni corrupti autem repudiandae possimus maiores suscipit perspiciatis, cum nostrum quia atque. Voluptatum asperiores alias ea labore inventore sunt tempora a explicabo numquam.
+            Dolore accusantium incidunt non consequatur porro, nulla esse aperiam doloremque at quibusdam quidem, sed nam ipsam? Nostrum, voluptatibus quasi? Laborum quis velit recusandae repellendus est ex vero exercitationem neque impedit!
+            Ipsam officiis quaerat numquam, doloribus dolorem optio distinctio, voluptatum dignissimos, accusantium atque nam animi libero esse molestiae soluta aliquid minus aliquam! Repellat dolor sit quos aperiam itaque hic pariatur ea?
+        </p>
+    </div>
+</body>
+</html>

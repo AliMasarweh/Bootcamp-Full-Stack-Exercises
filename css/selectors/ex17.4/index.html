@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    .dark-bg {
+        background-color: black;
+        color: white;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+    }
+
+    .cool-border {
+        padding: 5px;
+        align-self: center;
+        position: relative;
+    }
+
+    .cool-border .top-border::before {
+        content: '';
+        position: absolute;
+        top: -20%;
+        left: -10%;
+        width: 10px;
+        height: 10px;
+        border-top: 1px solid red;
+        border-left: 1px solid red;
+    }
+
+    .cool-border .top-border::after {
+        content: '';
+        position: absolute;
+        top: -20%;
+        right: -10%;
+        width: 10px;
+        height: 10px;
+        border-right: 1px solid red;
+        border-top: 1px solid red;
+    }
+
+    .cool-border .bottom-border::before {
+        content: '';
+        position: absolute;
+        bottom: -20%;
+        left: -10%;
+        width: 10px;
+        height: 10px;
+        border-bottom: 1px solid red;
+        border-left: 1px solid red;
+    }
+
+    .cool-border .bottom-border::after {
+        content: '';
+        position: absolute;
+        bottom: -20%;
+        right: -10%;
+        width: 10px;
+        height: 10px;
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+</style>
+<body>
+    <div class="dark-bg">
+        <div class="cool-border">
+            <span class="top-border"></span>
+            <h2>Cool Border</h2>
+            <span class="bottom-border"></span>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .box {
+      height: 50vh;
+      background-color: red;
+      position: relative;
+    }
+
+    .box:before {
+      content: '';
+      background-color: purple;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 100%;
+      z-index: 1;
+    }
+
+  </style>
+  <body>
+    <div class="box">
+    </div>
+  </body>
+</html>
