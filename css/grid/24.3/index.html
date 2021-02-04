@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      :root {
+        --grid-header-height: 10vh;
+        --grid-content-height: 75vh;
+        --grid-footer-height: 15vh;
+
+        --grid-content-tablet-height: 65vh;
+        --grid-content-smart-phone-height: 75vh;
+      }
+      .item {
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .p-1-rem {
+        padding: 1rem;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-areas:
+          "header header header header header"
+          "sidebar-1 grid-content grid-content grid-content sidebar-2"
+          "footer footer footer footer footer";
+        gap: 1rem;
+        color: white;
+      }
+
+      .grid-header {
+        grid-area: header;
+        height: var(--grid-header-height);
+        background-color: red;
+      }
+
+      .grid-content {
+        display: block;
+        grid-area: grid-content;
+        height: var(--grid-content-height);
+        background-color: green;
+      }
+
+      .grid-footer {
+        grid-area: footer;
+        background-color: yellowgreen;
+      }
+
+      .grid-sidebar:nth-of-type(1) {
+        background-color: blue;
+        grid-area: sidebar-1;
+      }
+
+      .grid-sidebar:nth-of-type(2) {
+        background-color: purple;
+        grid-area: sidebar-2;
+      }
+
+      @media screen and (min-width: 768px) and (max-width: 1024px) {
+        .grid-container {
+          display: grid;
+          grid-template-areas:
+            "header header header header header"
+            "sidebar-1 grid-content grid-content grid-content grid-content"
+            "sidebar-2 sidebar-2 sidebar-2 sidebar-2 sidebar-2"
+            "footer footer footer footer footer";
+          gap: 1rem;
+          color: white;
+        }
+
+        .grid-content {
+          display: block;
+          grid-area: grid-content;
+          height: 65vh;
+          background-color: green;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .grid-container {
+          display: grid;
+          grid-template-areas:
+            "header"
+            "sidebar-1"
+            "grid-content"
+            "sidebar-2"
+            "footer";
+          gap: 1rem;
+          color: white;
+        }
+
+        .grid-content {
+          display: block;
+          grid-area: grid-content;
+          height: 75vh;
+          background-color: green;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="grid-container">
+      <header class="item p-1-rem grid-header"><h2>Header</h2></header>
+      <aside class="item p-1-rem grid-sidebar"><h2>Sidebar</h2></aside>
+      <section class="item p-1-rem grid-content">
+        <h2>Content</h2>
+        <p>More content than we had before so column is now quite tall</p>
+      </section>
+      <aside class="item p-1-rem grid-sidebar"><h2>Sidebar2</h2></aside>
+      <footer class="item p-1-rem grid-footer">Footer</footer>
+    </section>
+  </body>
+</html>

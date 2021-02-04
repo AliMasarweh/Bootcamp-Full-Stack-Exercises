@@ -4,12 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-      .card {
-        width: 600px;
-        background-color: #e3b239;
+      :root {
+        --primary-text: steelblue;
+        --secondary-text: skyblue;
+        --dark-bg: #333;
+        --light-bg: #ccc;
+        --max-width: 960px;
+        --normal-text: #d7d7d7;
+        --hover-color: #a0c1d4;
       }
+
+      * {
+        box-sizing: border-box;
+
+        padding: 0;
+        margin-bottom: 0;
+      }
+
+      .primary-text {
+        color: var(--primary-text);
+      }
+
+      .secondary-text {
+        color: var(--secondary-text);
+      }
+
+      .dark-bg {
+        background-color: var(--dark-bg);
+      }
+
+      .ligh-bg {
+        background-color: var(--light-bg);
+      }
+
+      .card {
+      }
+
       .card-image {
-        width: 600px;
+        float: left;
       }
       .card-header {
         font-weight: bold;
@@ -22,13 +54,6 @@
         color: brown;
       }
 
-      * {
-        box-sizing: border-box;
-
-        padding: 10px 20px;
-        margin-bottom: 5px;
-      }
-
       .clear {
         clear: both;
         padding: 0 0;
@@ -36,15 +61,16 @@
       }
 
       .container {
-        float: none;
-        max-width: 960px;
+        display: flex;
+        max-width: var(--max-width);
+        background-color: var(--dark-bg);
+        color: var(--normal-text);
         margin: 20px auto;
       }
 
       #header {
-        float: inline-start;
+        display: block;
         height: fit-content;
-        background-color: orange;
         text-align: center;
         height: 50px;
         padding: 5px 10px;
@@ -52,67 +78,61 @@
       }
 
       #aside {
-        float: left;
         width: 28%;
-        background-color: green;
         padding: 5px 5px;
         margin-bottom: 0px;
       }
 
       #main {
-        float: right;
         width: 70%;
-        text-align: right;
-        background-color: purple;
+        text-align: left;
       }
 
       #footer {
-        float: inline-end;
-        background-color: blue;
         text-align: center;
         height: 50px;
       }
 
-      #navBar{
-          border: 1px #555 solid;
-          border-radius: 10px;
+      #navBar {
+        border: 1px #555 solid;
+        border-radius: 10px;
       }
 
-      #btn{
-        color: black;
+      #btn {
+        color: var(--normal-text);
         text-decoration: none;
       }
 
-      a{
-        color: black;
+      a {
+        color: var(--normal-text);
         text-decoration: none;
         padding: 5px 10px;
         margin-bottom: 0;
       }
 
-      .navBar a:hover{
+      .navBar a:hover {
         color: blue;
       }
 
-      .navBar a:active{
-        color:lightskyblue;
+      .navBar a:active {
+        color: lightskyblue;
         background-color: rgb(255, 145, 0);
       }
 
-      #aside ul li{
+      #aside ul li {
         display: inline;
       }
 
-      #aside ul li a:hover{
-        color: blue;
+      #aside ul li a:hover {
+        color: #a0c1d4;
       }
 
-      #aside ul li a:active{
+      #aside ul li a:active {
         color: lightskyblue;
         background-color: rgb(0, 128, 49);
       }
 
-      button.round_ghost{
+      button.round_ghost {
         border-width: 1px;
         color: white;
         border-radius: 5px;
@@ -127,20 +147,19 @@
       aside button:hover {
         color: #ddd;
       }
-
     </style>
     <title>Portfoli</title>
   </head>
   <body>
     <div class="container">
-        <header id="header">
-            <section class="navBar">
-                <a href="#">home</a>
-                <a href="#">projects</a>
-                <a href="#">blog</a>
-                <a href="landing-page.html">fluid page</a>
-            </section>
-        </header>
+      <header id="header">
+        <section class="navBar">
+          <a href="#">home</a>
+          <a href="#">projects</a>
+          <a href="#">blog</a>
+          <a href="landing-page.html">fluid page</a>
+        </section>
+      </header>
       <main id="main">
         <section class="card">
           <img
@@ -150,7 +169,7 @@
             class="card-image"
           />
           <br />
-          <h1 style="display: inline" class="card-heade">Ali Masarwe</h1>
+          <h1 style="display: inline" class="card-header">Ali Masarwe</h1>
           <h2 class="card-sub-header">Software Engineer</h2>
 
           <p style="font-size: large">
@@ -181,7 +200,6 @@
               >Facbook</a
             >
           </li>
-          <!-- I don't have more social media accounts -->
           <li>
             <a href="https://github.com/AliMasarweh" target="_blank">github</a>
           </li>
@@ -189,9 +207,7 @@
         <button class="round_ghost round_submit">A button</button>
       </aside>
       <div class="clear"></div>
-        <footer id="footer">
-            Footer
-        </footer>
+      <footer id="footer">Footer</footer>
     </div>
   </body>
 </html>
